@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задача</title>
+    <link rel="stylesheet" href="site4.css">
+    <link rel="icon" href="https://play-lh.googleusercontent.com/2j-z3t20D8yLBLScuzp3sFfLCR40PHmQxdVO-O2JrFtcDA7pmg0ln-MmEDcm7tUsLn4">
+ <script src="zadacha.js" defer></script>
+</head>
+<body>
+    <div id="top"></div>
+       <section class="navigation"> 
+<nav><ul class="nav-list">
+   <li> <a href="index.html" class="nav-button">Главная</a></li>
+    <li> <a href="history.html" class="nav-button">История игры</a></li>
+  <li> <a href="tabl.html" class="nav-button">Таблица </a></li>
+   <li> <a href="zadacha.html" class="nav-button"><u>Задача + Форма</u></a></li>
+  <li><a href="passport.html" class="nav-button">Паспорт</a></li>
+  </ul></nav>
+ </nav> </section>
+
+ <div class="task">
+<h2>Решение алгоритмической задачи</h2>
+<p>Можно ли в квадратном зале площадью S поместить круглую сцену радиусом R так, чтобы от стены до сцены был проход не менее K?</p>
+
+<form id="stageForm" action="https://www.bing.com/search" method="get" target="_blank">
+    <label for="S">Площадь зала S (м²):</label>
+    <input type="number" id="S" name="S" required value="100" min="0" ><br>
+
+    <label for="R">Радиус сцены R (м):</label>
+    <input type="number" id="R" name="R" required value="4" min="0" ><br>
+
+    <label for="K">Минимальный проход K (м):</label>
+    <input type="number" id="K" name="K" required value="1" min="0"><br>
+
+    <input type="hidden" name="q" value="stage placement calculation">
+    
+    <button type="button" id="checkBtn">Проверить</button>
+    <button type="submit">Отправить данные на сервер</button>
+</form>
+
+<div id="result" style="margin-top: 15px; padding: 10px; font-weight: bold;"></div>
+
+</div>
+ <div class="contact-info">
+<div class="photo">
+<h1>Форма // отправляем данные на сервер :)</h1>
+
+
+<form action="https://www.google.com/search" name="q" method="get" id="userenter" 
+target="_blank">
+    <p><input type="hidden" value="search"></p>
+
+
+  <h3>Контактная информация:</h3>
+  <p>
+    <label for="lastname">Фамилия:</label>
+    <input type="text" name="lastname" required id="lastname">
+  </p>
+
+  <p>
+    <label for="name">Имя:</label>
+    <input type="text" id="name" name="name" required>
+  </p>
+  
+  <p>
+    <label for="group">Группа:</label>
+    <input type="text"id="group" name="group" required>
+  </p>
+
+  <p>
+    <label for="phone">Номер телефона:</label>
+    <input type="text" id="phone" name="phone" required>
+  </p>
+
+  <p>
+    <label for="email">Почта:</label>
+    <input type="text" id="email" name="email" required>
+  </p>
+
+  <p>
+    <label for="date">Сегодняшняя дата:</label>
+    <input type="text" id="date" name="date" required>
+  </p>
+
+  <p>
+    <button type="submit">Отправить!</button>
+  </p>
+</form>
+</div>
+
+<div class="info" id="info">
+<form action="https://www.bing.com/search?" method="get" id="form1" target="_blank" name="boba_form">
+        <p><b>Заявление на участие в игровом забеге</b><input type="hidden" name="q" value="search"></p>
+  <label for="fav_fruit">Ваш любимый персонаж?</label>
+  <input type="text" id="fav_person" name="fav_pers" required="" value="pers">
+<div> 
+  <label for="water">Количество пройденных забегов?</label>
+  <input type="number" name="water" id="water" required="" value="2">
+</div>
+  <fieldset>
+    <label for="milk">Предпочитаемое время?<input type="checkbox" name="milk" id="milk" value="milk">
+    До обеда</label><div> 
+    <label>После обеда<input type="checkbox" name="milk" id="Coffee" value="Coffee"></label></div>
+   </fieldset>
+  <label for="secret">Ваш самый высокий скор!</label>
+  <input type="password" name="secret_score" id="secret_score">
+ 
+
+  <fieldset>
+    <legend>Предпочитаемая локация игры</legend>
+    <label for="T"><input type="radio" name="fav_region" id="T" value="Russia">Россия</label>
+    <label for="SK"><input type="radio" name="fav_region" id="SK" value="South Korea">Южная Корея</label>
+    <label for="J"><input type="radio" name="fav_region" id="J" value="Japan">Япония</label>
+    <label for="C"><input type="radio" name="fav_region" id="C" value="China">Китай</label>
+</fieldset>
+
+<label for="day">Предпочитаемая дата</label>
+<input type="date" name="date_of_boba_journey" id="date_of_boba_journey">
+
+    <p>
+  <button type="submit" id="button1">Ждем вас на нашей игре!</button>
+</p>
+
+    <input type="hidden" name="result_boba_pref" value="Boba Classic">
+
+</form>
+
+
+
+
+</div>
+</body>
+</html>
